@@ -1,4 +1,12 @@
-{% extends 'base.html.twig' %}
-
-{% block content %} {{ htmlResponse }} {% endblock %}
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pythagor Table</title>
+</head>
+<body>
+    <h1>Pythagore Table Pour {{ name }}</h1>
+    <div>
+        {{ pythagore_table|raw }} <!-- Utiliser |raw pour rendre le HTML -->
+    </div>
+</body>
+</html>
